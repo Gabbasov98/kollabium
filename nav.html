@@ -31,6 +31,27 @@
         <a href="index.html" style="display: block; margin-bottom: 20px;">
             Главная
         </a>
+        <a href="feed.html" style="display: block; margin-bottom: 20px;">
+            Контентная лента
+        </a>
+        <a href="users.html" style="display: block; margin-bottom: 20px;">
+            Подписки
+        </a>
+        <a href="subscribe.html" style="display: block; margin-bottom: 20px;">
+            Варианты оплаты:
+        </a>
+        <a href="partners.html" style="display: block; margin-bottom: 20px;">
+            Партнерская программа
+        </a>
+        <a href="partners2.html" style="display: block; margin-bottom: 20px;">
+            Партнерская программа 2
+        </a>
+        <a href="pay.html" style="display: block; margin-bottom: 20px;">
+            Варианты оплаты
+        </a>
+        <a href="team.html" style="display: block; margin-bottom: 20px;">
+            Управление командой
+        </a>
         <a href="confirm.html" style="display: block; margin-bottom: 20px;">
             Пользовательское соглашение
         </a>
@@ -59,27 +80,84 @@
 
 
 
-        <!--        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">-->
-        <!--            Быстрый заказ-->
-        <!--        </button>-->
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="avatarModal">
+            Загрузка аватара
+        </button>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-modal="avatarModal2">
+            Загрузка аватара 2
+        </button>
 
     </div>
 
-    <div class="modal" id="quickOrder" aria-hidden="true">
-        <div class="modal-dialog">
-            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.55401 10.5L2 2.94599L2.94599 2L10.5 9.55401L18.054 2L19 2.94599L11.446 10.5L19 18.054L18.054 19L10.5 11.446L2.94599 19L2 18.054L9.55401 10.5Z" fill="#333333" />
-                </svg>
-            </button>
+    <div class="modal" id="avatarModal">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__inner">
+                <div class="img-input">
+                    <input type="file">
+                    <img src="img/user3.png" alt="">
+                    <span class="img-input__mark">
+                    ?
+                </span>
+                </div>
+                <div class="modal__info">
+                    <div class="text32 font2">
+                        Загрузите ваш аватар
+                    </div>
+                    <div class="text16 lh150">
+                        Ваш задний фон на фотографии будет удалён. Наши нейросети сделают это быстрее, чем вы в Фотошопе, поэтому можете не волноваться.
+                    </div>
+                    <div class="modal__nav">
+                        <button class="modal__btn m-btn m-btn-purple">
+                            <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 17V19.25C3 19.8467 3.23705 20.419 3.65901 20.841C4.08097 21.2629 4.65326 21.5 5.25 21.5H18.75C19.3467 21.5 19.919 21.2629 20.341 20.841C20.7629 20.419 21 19.8467 21 19.25V17M16.5 12.5L12 17M12 17L7.5 12.5M12 17V3.5" stroke="#F6F6F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>Загрузить аватар</span>
+                        </button>
+                    </div>
+                </div>
 
-
-
+            </div>
         </div>
     </div>
 
 
+    <div class="modal" id="avatarModal2">
+        <div class="modal__bg _close-modal"></div>
+        <div class="modal__dialog">
+            <div class="modal__inner">
+                <div class="img-input">
+                    <img src="img/user4.png" alt="">
+                </div>
+                <div class="modal__info _big">
+                    <div class="text32 font2">
+                        Вы хотите сохранить эту фотографию как аватар профиля?
+                    </div>
+                    <div class="text16 lh150">
+                        Мы как и обещали обработали вашу фотографию и убрали задний, даже немного её улучшили в качестве, чтобы вы не могли себя узнать. Сохранем
+                    </div>
+                    <div class="modal__nav">
+                        <button class="modal__btn m-btn m-btn-purple">
+                            <span>Сохранить</span>
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 12.75L11.75 15L15.5 9.75M21.5 12C21.5 13.1819 21.2672 14.3522 20.8149 15.4442C20.3626 16.5361 19.6997 17.5282 18.864 18.364C18.0282 19.1997 17.0361 19.8626 15.9442 20.3149C14.8522 20.7672 13.6819 21 12.5 21C11.3181 21 10.1478 20.7672 9.05585 20.3149C7.96392 19.8626 6.97177 19.1997 6.13604 18.364C5.30031 17.5282 4.63738 16.5361 4.18508 15.4442C3.73279 14.3522 3.5 13.1819 3.5 12C3.5 9.61305 4.44821 7.32387 6.13604 5.63604C7.82387 3.94821 10.1131 3 12.5 3C14.8869 3 17.1761 3.94821 18.864 5.63604C20.5518 7.32387 21.5 9.61305 21.5 12Z" stroke="#F6F6F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="modal__btn m-btn m-btn-purple">
+                            <span>Отменить</span>
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.25 9.75L14.75 14.25M14.75 9.75L10.25 14.25M21.5 12C21.5 13.1819 21.2672 14.3522 20.8149 15.4442C20.3626 16.5361 19.6997 17.5282 18.864 18.364C18.0282 19.1997 17.0361 19.8626 15.9442 20.3149C14.8522 20.7672 13.6819 21 12.5 21C11.3181 21 10.1478 20.7672 9.05585 20.3149C7.96392 19.8626 6.97177 19.1997 6.13604 18.364C5.30031 17.5282 4.63738 16.5361 4.18508 15.4442C3.73279 14.3522 3.5 13.1819 3.5 12C3.5 9.61305 4.44821 7.32387 6.13604 5.63604C7.82387 3.94821 10.1131 3 12.5 3C14.8869 3 17.1761 3.94821 18.864 5.63604C20.5518 7.32387 21.5 9.61305 21.5 12Z" stroke="#F6F6F6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <!-- <div class="modal-backdrop show"></div> -->
+
     <!--  -->
     <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
