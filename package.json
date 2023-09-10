@@ -1,0 +1,14 @@
+{
+  "name": "kollabium",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "git@github.com:Gabbasov98/kollabium.git",
+  "author": "Simokhin Timofei <t.simokhin@qiwi.com>",
+  "license": "MIT",
+  "scripts": {
+    "api": "rm -rf gen/api && npx @openapitools/openapi-generator-cli generate -i  https://dev.backend.kollabium.com/request-docs/api\\?openapi\\=true --skip-validate-spec --generator-name typescript-axios -o js/api --config api.json"
+  },
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.7.0"
+  }
+}
